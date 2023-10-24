@@ -1,6 +1,6 @@
 # FastApi Books
 
-Projeto criado com objetivo de praticar conhecimentos adiquiridos no fastapi.
+Projeto criado com objetivo de praticar conhecimentos adiquiridos em fastapi.
 
 ## Como começar?
 
