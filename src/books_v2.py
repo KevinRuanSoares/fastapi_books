@@ -19,3 +19,8 @@ BOOKS = [
 @router.get("/books") 
 async def read_all_books():
   return BOOKS
+
+
+@router.post("/books/create_book")
+async def create_book(body_request=Body()):
+  BOOKS.append(body_request)
