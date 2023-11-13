@@ -2,8 +2,9 @@ from pydantic import BaseModel
 
 
 class BookRequest(BaseModel):
-    
-    id: int
+    """BookRequest type"""
+
+    book_id: int
     title: str
     author: str
     description: str
