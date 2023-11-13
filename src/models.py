@@ -5,9 +5,9 @@ class Book:
     description: str
     rating: str
     
-    def __init__(self, id, title, author, decription, rating) -> None:
+    def __init__(self, id, title, author, description, rating) -> None:
         self.id = id
         self.title = title
         self.author = author
-        self.decription = decription
+        self.description = description
         self.rating = rating

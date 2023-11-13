@@ -1,5 +1,6 @@
 from fastapi import Body, APIRouter
-from interfaces import Book
+from models import Book
+from validation import BookRequest
 
 router = APIRouter()
 
@@ -22,5 +23,6 @@ async def read_all_books():
 
 
 @router.post("/books/create_book")
-async def create_book(body_request=Body()):
-  BOOKS.append(body_request)
+async def create_book(body_request:BookRequest):
+  new_book = Book(**body_request.dict())
+  BOOKS.append(new_book)

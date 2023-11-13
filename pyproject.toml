@@ -10,6 +10,7 @@ packages = [{include = "fastapi_books"}]
 python = "^3.11"
 fastapi = "^0.101.1"
 uvicorn = {extras = ["standard"], version = "^0.23.2"}
+pydantic = "^2.4.2"
 
 
 [build-system]
